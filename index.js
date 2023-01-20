@@ -2,6 +2,7 @@
 const hourEl = document.getElementById("hour");
 const minuteEl = document.getElementById("minute");
 const secondEl = document.getElementById("second");
+const ampmEl = document.getElementById("ampm");
 
 function updateClock(){
 
@@ -21,6 +22,7 @@ function updateClock(){
     hourEl.innerText = h;
     minuteEl.innerText = m;
     secondEl.innerText = s;
+    ampmEl.innerText = ampm;
      setTimeout(() => {
         updateClock();
      },1000);
